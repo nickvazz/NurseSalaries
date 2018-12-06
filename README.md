@@ -1,2 +1,5 @@
 # NurseSalaries
-This shows an interactive html map of Hospital's New Grad Salary for Nurses.
+This shows a map of Hospital's New Grad Salary for Nurses. Red is high, Blue is low.
+
+![](https://github.com/nickvazz/NurseSalaries/blob/master/scatterMap.png?raw=true)
+
