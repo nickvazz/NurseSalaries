@@ -1,0 +1,2418 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_d2597afd95bc416f841ba0a21cc7cbaf {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_d2597afd95bc416f841ba0a21cc7cbaf" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_d2597afd95bc416f841ba0a21cc7cbaf = L.map(
+        'map_d2597afd95bc416f841ba0a21cc7cbaf', {
+        center: [35.61827772942142, -119.7235451297483],
+        zoom: 6.3,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_510fca6a39c34718a16e33060d5e2388 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_d2597afd95bc416f841ba0a21cc7cbaf);
+    
+            var marker_cluster_c21556a28b90469786e3a4f4694f7e19 = L.markerClusterGroup({});
+            map_d2597afd95bc416f841ba0a21cc7cbaf.addLayer(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+            
+    
+        var marker_95359b29f63e47a2a27f5fbbf352c671 = L.marker(
+            [37.4446601867676, -122.160789489746],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_0bf5627297294373a9b186f19f622c61 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#b40426',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_95359b29f63e47a2a27f5fbbf352c671.setIcon(icon_0bf5627297294373a9b186f19f622c61);
+            
+    
+            var popup_470814221edb4c968c0d804dc85d2c9d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2add973f71e84d808070b877d1ecca39 = $(`<div id="html_2add973f71e84d808070b877d1ecca39" style="width: 100.0%; height: 100.0%;">Lucile Packard Children’s Hospital Stanford<br><center>$138,278.40 per year</center></div>`)[0];
+                popup_470814221edb4c968c0d804dc85d2c9d.setContent(html_2add973f71e84d808070b877d1ecca39);
+            
+
+            marker_95359b29f63e47a2a27f5fbbf352c671.bindPopup(popup_470814221edb4c968c0d804dc85d2c9d)
+            ;
+
+            
+        
+    
+        var marker_618db3e1da7b42678d17ceca210a0670 = L.marker(
+            [37.431369781494105, -122.16892242431601],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_4a4e2ddf47684671bc3847fdb01145ee = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#b40426',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_618db3e1da7b42678d17ceca210a0670.setIcon(icon_4a4e2ddf47684671bc3847fdb01145ee);
+            
+    
+            var popup_d74d75d1ed4d41b7966ad818e87bb61e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bb1e7def7ade4fcdb20a1c16aa486b47 = $(`<div id="html_bb1e7def7ade4fcdb20a1c16aa486b47" style="width: 100.0%; height: 100.0%;">Stanford Medical Center<br><center>$138,278.40 per year</center></div>`)[0];
+                popup_d74d75d1ed4d41b7966ad818e87bb61e.setContent(html_bb1e7def7ade4fcdb20a1c16aa486b47);
+            
+
+            marker_618db3e1da7b42678d17ceca210a0670.bindPopup(popup_d74d75d1ed4d41b7966ad818e87bb61e)
+            ;
+
+            
+        
+    
+        var marker_b8d6fc54299f432a8ac5686d1479417f = L.marker(
+            [37.3695106506348, -122.079429626465],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_3e7c5b432a664d75a438f094b3b157bd = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#d65244',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b8d6fc54299f432a8ac5686d1479417f.setIcon(icon_3e7c5b432a664d75a438f094b3b157bd);
+            
+    
+            var popup_480ede26ca894379871c497a07becbc8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ef69888efdd3441fbdf4a73763b557d2 = $(`<div id="html_ef69888efdd3441fbdf4a73763b557d2" style="width: 100.0%; height: 100.0%;">El Camino Hospital<br><center>$130,228.80 per year</center></div>`)[0];
+                popup_480ede26ca894379871c497a07becbc8.setContent(html_ef69888efdd3441fbdf4a73763b557d2);
+            
+
+            marker_b8d6fc54299f432a8ac5686d1479417f.bindPopup(popup_480ede26ca894379871c497a07becbc8)
+            ;
+
+            
+        
+    
+        var marker_ba88794beb4a4f7da5eb464e168de442 = L.marker(
+            [37.7633209228516, -122.458541870117],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_2b32bad9da1b4d339c8da8a2d4bdfbfe = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#d65244',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ba88794beb4a4f7da5eb464e168de442.setIcon(icon_2b32bad9da1b4d339c8da8a2d4bdfbfe);
+            
+    
+            var popup_8bffc6df402143d19b9eb177f4102193 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8de7b21ff0304381a8ea7dc0768100d6 = $(`<div id="html_8de7b21ff0304381a8ea7dc0768100d6" style="width: 100.0%; height: 100.0%;">UC San Francisco<br><center>$130,187.20 per year</center></div>`)[0];
+                popup_8bffc6df402143d19b9eb177f4102193.setContent(html_8de7b21ff0304381a8ea7dc0768100d6);
+            
+
+            marker_ba88794beb4a4f7da5eb464e168de442.bindPopup(popup_8bffc6df402143d19b9eb177f4102193)
+            ;
+
+            
+        
+    
+        var marker_125bcb913ec44e59be43e657e14a2a11 = L.marker(
+            [37.550910949706996, -121.98217010498001],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_d1de8b006b144735a04d3d78bb8df4e3 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#da5a49',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_125bcb913ec44e59be43e657e14a2a11.setIcon(icon_d1de8b006b144735a04d3d78bb8df4e3);
+            
+    
+            var popup_acc26a6155f14214879c93b7189c055f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_846e99a4bb9f48458a1217e9cadb1af4 = $(`<div id="html_846e99a4bb9f48458a1217e9cadb1af4" style="width: 100.0%; height: 100.0%;">Washington Hospital Healthcare System<br><center>$128,960.00 per year</center></div>`)[0];
+                popup_acc26a6155f14214879c93b7189c055f.setContent(html_846e99a4bb9f48458a1217e9cadb1af4);
+            
+
+            marker_125bcb913ec44e59be43e657e14a2a11.bindPopup(popup_acc26a6155f14214879c93b7189c055f)
+            ;
+
+            
+        
+    
+        var marker_f6497ce868984d8da7b455ce36873cf7 = L.marker(
+            [36.9740600585938, -122.030952453613],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_118931b080ec436a9b6a210a502140f7 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#e36c55',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f6497ce868984d8da7b455ce36873cf7.setIcon(icon_118931b080ec436a9b6a210a502140f7);
+            
+    
+            var popup_17f24e6ef5374cf892cc286b6747331b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c50f4dff25d04fbb991b9f4250bd93e0 = $(`<div id="html_c50f4dff25d04fbb991b9f4250bd93e0" style="width: 100.0%; height: 100.0%;">Dominican Hospital Dignity Health<br><center>$126,152.00 per year</center></div>`)[0];
+                popup_17f24e6ef5374cf892cc286b6747331b.setContent(html_c50f4dff25d04fbb991b9f4250bd93e0);
+            
+
+            marker_f6497ce868984d8da7b455ce36873cf7.bindPopup(popup_17f24e6ef5374cf892cc286b6747331b)
+            ;
+
+            
+        
+    
+        var marker_161af53fd95c459dae51c916300bf125 = L.marker(
+            [37.77711868286129, -122.419639587402],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_de357882a58a49539dbe4c3550a0cf72 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#ee8669',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_161af53fd95c459dae51c916300bf125.setIcon(icon_de357882a58a49539dbe4c3550a0cf72);
+            
+    
+            var popup_14e820a041614498b5f3eaad68aa547b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_35329a96893a4e869c444b422cc3e4da = $(`<div id="html_35329a96893a4e869c444b422cc3e4da" style="width: 100.0%; height: 100.0%;">Sutter California Pacific Medical Center<br><center>$121,992.00 per year</center></div>`)[0];
+                popup_14e820a041614498b5f3eaad68aa547b.setContent(html_35329a96893a4e869c444b422cc3e4da);
+            
+
+            marker_161af53fd95c459dae51c916300bf125.bindPopup(popup_14e820a041614498b5f3eaad68aa547b)
+            ;
+
+            
+        
+    
+        var marker_fafeecbf0045481287139d9fb2656da9 = L.marker(
+            [37.580249786377, -122.35066986084],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_58a99847970642eea05e660cdcc0a953 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#f08b6e',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fafeecbf0045481287139d9fb2656da9.setIcon(icon_58a99847970642eea05e660cdcc0a953);
+            
+    
+            var popup_17bf2eaa773f49b7b19181c59d2e5bd4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_55a831dca8864da79996df303838ddde = $(`<div id="html_55a831dca8864da79996df303838ddde" style="width: 100.0%; height: 100.0%;">Mills-Peninsula Medical Center | Sutter Health<br><center>$120,785.60 per year</center></div>`)[0];
+                popup_17bf2eaa773f49b7b19181c59d2e5bd4.setContent(html_55a831dca8864da79996df303838ddde);
+            
+
+            marker_fafeecbf0045481287139d9fb2656da9.bindPopup(popup_17bf2eaa773f49b7b19181c59d2e5bd4)
+            ;
+
+            
+        
+    
+        var marker_d50b895e2b8e4b9e936455fa57f4f8ae = L.marker(
+            [38.249229431152294, -122.043876647949],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_412e24c546574adcbc1bd7d9c186d1a5 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#f18d6f',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d50b895e2b8e4b9e936455fa57f4f8ae.setIcon(icon_412e24c546574adcbc1bd7d9c186d1a5);
+            
+    
+            var popup_a25ac9c4b1784361bf6999042b9d2673 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bfb779bb08464e61bd95a686e809ce7f = $(`<div id="html_bfb779bb08464e61bd95a686e809ce7f" style="width: 100.0%; height: 100.0%;">North Bay Medical Center<br><center>$120,640.00 per year</center></div>`)[0];
+                popup_a25ac9c4b1784361bf6999042b9d2673.setContent(html_bfb779bb08464e61bd95a686e809ce7f);
+            
+
+            marker_d50b895e2b8e4b9e936455fa57f4f8ae.bindPopup(popup_a25ac9c4b1784361bf6999042b9d2673)
+            ;
+
+            
+        
+    
+        var marker_9b04bed0ebd2459897e822eb8d1f8f01 = L.marker(
+            [37.9537315368652, -121.290458679199],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_d7e69db9d00f4d2b887d55f203ac1f3d = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#f5a081',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9b04bed0ebd2459897e822eb8d1f8f01.setIcon(icon_d7e69db9d00f4d2b887d55f203ac1f3d);
+            
+    
+            var popup_6127d7d970424da18f0429d5aec49954 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2c3f2677d25f44f8ba5a3563beabb80d = $(`<div id="html_2c3f2677d25f44f8ba5a3563beabb80d" style="width: 100.0%; height: 100.0%;">Sutter Health Stockton<br><center>$116,875.20 per year</center></div>`)[0];
+                popup_6127d7d970424da18f0429d5aec49954.setContent(html_2c3f2677d25f44f8ba5a3563beabb80d);
+            
+
+            marker_9b04bed0ebd2459897e822eb8d1f8f01.bindPopup(popup_6127d7d970424da18f0429d5aec49954)
+            ;
+
+            
+        
+    
+        var marker_087c0057d15a42fb914badec29f5a811 = L.marker(
+            [37.338649749755895, -121.88542175293001],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_03276fb3074c4620b6c615e55d69f9b6 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#f7ad90',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_087c0057d15a42fb914badec29f5a811.setIcon(icon_03276fb3074c4620b6c615e55d69f9b6);
+            
+    
+            var popup_6f4bdf02429741a1ba0ea55d2e2d6f11 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b5ccdb0d9bb1412884288ecf34631462 = $(`<div id="html_b5ccdb0d9bb1412884288ecf34631462" style="width: 100.0%; height: 100.0%;">O'Connor Hospital <br><center>$114,192.00 per year</center></div>`)[0];
+                popup_6f4bdf02429741a1ba0ea55d2e2d6f11.setContent(html_b5ccdb0d9bb1412884288ecf34631462);
+            
+
+            marker_087c0057d15a42fb914badec29f5a811.bindPopup(popup_6f4bdf02429741a1ba0ea55d2e2d6f11)
+            ;
+
+            
+        
+    
+        var marker_697848a4232e4711a94a8fb0d503484c = L.marker(
+            [38.6251983642578, -121.32839202880899],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_828b5ddc6cae47ef88b37776d27d8e3f = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#f7b497',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_697848a4232e4711a94a8fb0d503484c.setIcon(icon_828b5ddc6cae47ef88b37776d27d8e3f);
+            
+    
+            var popup_430075dd23234247964a81a336f542ee = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_145996f7d7134cd5bc352ed6a73ae506 = $(`<div id="html_145996f7d7134cd5bc352ed6a73ae506" style="width: 100.0%; height: 100.0%;">Mercy San Juan Medical Center<br><center>$112,611.20 per year</center></div>`)[0];
+                popup_430075dd23234247964a81a336f542ee.setContent(html_145996f7d7134cd5bc352ed6a73ae506);
+            
+
+            marker_697848a4232e4711a94a8fb0d503484c.bindPopup(popup_430075dd23234247964a81a336f542ee)
+            ;
+
+            
+        
+    
+        var marker_7387e05aa7164afdbbec5eeaf589e247 = L.marker(
+            [37.0043792724609, -121.571670532227],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_bbd6c958766d4133ac49cc1e55b77264 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#f7b497',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7387e05aa7164afdbbec5eeaf589e247.setIcon(icon_bbd6c958766d4133ac49cc1e55b77264);
+            
+    
+            var popup_2800e735ba3044ea84a746baee430491 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a7d12f2589ca459db3f805e9469372b7 = $(`<div id="html_a7d12f2589ca459db3f805e9469372b7" style="width: 100.0%; height: 100.0%;">St. Louise Regional Hospital<br><center>$112,528.00 per year</center></div>`)[0];
+                popup_2800e735ba3044ea84a746baee430491.setContent(html_a7d12f2589ca459db3f805e9469372b7);
+            
+
+            marker_7387e05aa7164afdbbec5eeaf589e247.bindPopup(popup_2800e735ba3044ea84a746baee430491)
+            ;
+
+            
+        
+    
+        var marker_6c1a719493b445609ef1eb2f0666160d = L.marker(
+            [38.015830993652294, -121.81974029541],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_05aa472976554d6f997ea840d41142f9 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#f7b99e',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6c1a719493b445609ef1eb2f0666160d.setIcon(icon_05aa472976554d6f997ea840d41142f9);
+            
+    
+            var popup_1fc84086f3df4462ba31837b7d80ac24 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ded9bdea8c5d4ecfbbeab224bb6251a1 = $(`<div id="html_ded9bdea8c5d4ecfbbeab224bb6251a1" style="width: 100.0%; height: 100.0%;">Sutter Delta Medical Center<br><center>$111,259.20 per year</center></div>`)[0];
+                popup_1fc84086f3df4462ba31837b7d80ac24.setContent(html_ded9bdea8c5d4ecfbbeab224bb6251a1);
+            
+
+            marker_6c1a719493b445609ef1eb2f0666160d.bindPopup(popup_1fc84086f3df4462ba31837b7d80ac24)
+            ;
+
+            
+        
+    
+        var marker_03e66cf3f82c43598000ff2178c313cb = L.marker(
+            [37.338649749755895, -121.88542175293001],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_6cc6ccbed67d4f03bee0847774a95857 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#f4c5ad',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_03e66cf3f82c43598000ff2178c313cb.setIcon(icon_6cc6ccbed67d4f03bee0847774a95857);
+            
+    
+            var popup_9ad9f9c940f341d1b9d3a71a73f002bc = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3f26c48f628a4da18a18fb3934bfb1ee = $(`<div id="html_3f26c48f628a4da18a18fb3934bfb1ee" style="width: 100.0%; height: 100.0%;">Good Samaritan Hospital<br><center>$108,243.20 per year</center></div>`)[0];
+                popup_9ad9f9c940f341d1b9d3a71a73f002bc.setContent(html_3f26c48f628a4da18a18fb3934bfb1ee);
+            
+
+            marker_03e66cf3f82c43598000ff2178c313cb.bindPopup(popup_9ad9f9c940f341d1b9d3a71a73f002bc)
+            ;
+
+            
+        
+    
+        var marker_533a926f62124d08950f827d633501e1 = L.marker(
+            [37.338649749755895, -121.88542175293001],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_669e7afd8334452bb5875480f850dc65 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#f4c5ad',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_533a926f62124d08950f827d633501e1.setIcon(icon_669e7afd8334452bb5875480f850dc65);
+            
+    
+            var popup_90153f70db7c4f2abf38d8f4208993c2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9a834fb8854848daaf4072c3364f4c57 = $(`<div id="html_9a834fb8854848daaf4072c3364f4c57" style="width: 100.0%; height: 100.0%;">Regional Medical Center<br><center>$108,160.00 per year</center></div>`)[0];
+                popup_90153f70db7c4f2abf38d8f4208993c2.setContent(html_9a834fb8854848daaf4072c3364f4c57);
+            
+
+            marker_533a926f62124d08950f827d633501e1.bindPopup(popup_90153f70db7c4f2abf38d8f4208993c2)
+            ;
+
+            
+        
+    
+        var marker_65dd281d56b245f88851130fa23658ca = L.marker(
+            [38.5544395446777, -121.459991455078],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_14114985cc684381abe6d847ae101355 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#f4c6af',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_65dd281d56b245f88851130fa23658ca.setIcon(icon_14114985cc684381abe6d847ae101355);
+            
+    
+            var popup_ea5c383a9d9a48c49baac8f81740002f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a56c6dcdadd74458be032ecafe7efa29 = $(`<div id="html_a56c6dcdadd74458be032ecafe7efa29" style="width: 100.0%; height: 100.0%;">UC Davis Medical Center<br><center>$107,806.40 per year</center></div>`)[0];
+                popup_ea5c383a9d9a48c49baac8f81740002f.setContent(html_a56c6dcdadd74458be032ecafe7efa29);
+            
+
+            marker_65dd281d56b245f88851130fa23658ca.bindPopup(popup_ea5c383a9d9a48c49baac8f81740002f)
+            ;
+
+            
+        
+    
+        var marker_58711203cdf64e76958718d9dd0ebd8d = L.marker(
+            [37.805080413818395, -122.273071289062],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_7c7b1a351d85447983db8fb4e9105ca9 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#f3c7b1',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_58711203cdf64e76958718d9dd0ebd8d.setIcon(icon_7c7b1a351d85447983db8fb4e9105ca9);
+            
+    
+            var popup_12bbc9125265476bacedd15034b25614 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_efbf54ca51fe453d91f1d1e641fc22a9 = $(`<div id="html_efbf54ca51fe453d91f1d1e641fc22a9" style="width: 100.0%; height: 100.0%;">Oakland Unified School District<br><center>$107,473.60 per year</center></div>`)[0];
+                popup_12bbc9125265476bacedd15034b25614.setContent(html_efbf54ca51fe453d91f1d1e641fc22a9);
+            
+
+            marker_58711203cdf64e76958718d9dd0ebd8d.bindPopup(popup_12bbc9125265476bacedd15034b25614)
+            ;
+
+            
+        
+    
+        var marker_7f5df36919fa470ab8e66a135ff37e11 = L.marker(
+            [37.7668304443359, -122.24530029296899],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_7cafd3c0e21b4b2c8bcae17759409208 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#f2cbb7',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7f5df36919fa470ab8e66a135ff37e11.setIcon(icon_7cafd3c0e21b4b2c8bcae17759409208);
+            
+    
+            var popup_701282767b9e414f9b2be40d471c18c0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4e1efd8f31c542c7ae336a0722f5acba = $(`<div id="html_4e1efd8f31c542c7ae336a0722f5acba" style="width: 100.0%; height: 100.0%;">Alameda Hospital<br><center>$106,080.00 per year</center></div>`)[0];
+                popup_701282767b9e414f9b2be40d471c18c0.setContent(html_4e1efd8f31c542c7ae336a0722f5acba);
+            
+
+            marker_7f5df36919fa470ab8e66a135ff37e11.bindPopup(popup_701282767b9e414f9b2be40d471c18c0)
+            ;
+
+            
+        
+    
+        var marker_851bba1d7b634f32a72b2c1e6851aa79 = L.marker(
+            [37.805080413818395, -122.273071289062],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_67c97d22024f42669f04aa56fbadd2ba = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#ecd3c5',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_851bba1d7b634f32a72b2c1e6851aa79.setIcon(icon_67c97d22024f42669f04aa56fbadd2ba);
+            
+    
+            var popup_0f5d3fbea17f41c78a41ed4f399a75f0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3e7956832fef4f639f68505a5e7efe94 = $(`<div id="html_3e7956832fef4f639f68505a5e7efe94" style="width: 100.0%; height: 100.0%;">Sutter Alta Bates Summit Medical Center<br><center>$103,438.40 per year</center></div>`)[0];
+                popup_0f5d3fbea17f41c78a41ed4f399a75f0.setContent(html_3e7956832fef4f639f68505a5e7efe94);
+            
+
+            marker_851bba1d7b634f32a72b2c1e6851aa79.bindPopup(popup_0f5d3fbea17f41c78a41ed4f399a75f0)
+            ;
+
+            
+        
+    
+        var marker_30463d9eb9124c018f2a30e8abd75e30 = L.marker(
+            [37.6713409423828, -122.08554077148399],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_633b14932a4c4962911cbd476221a440 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#dfdbd9',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_30463d9eb9124c018f2a30e8abd75e30.setIcon(icon_633b14932a4c4962911cbd476221a440);
+            
+    
+            var popup_e45ea1e1bd234b3780f86e22b9ab163e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_af2c8ec7f34d40108bf7b27cf9b69f02 = $(`<div id="html_af2c8ec7f34d40108bf7b27cf9b69f02" style="width: 100.0%; height: 100.0%;">St. Rose Hospital<br><center>$99,174.40 per year</center></div>`)[0];
+                popup_e45ea1e1bd234b3780f86e22b9ab163e.setContent(html_af2c8ec7f34d40108bf7b27cf9b69f02);
+            
+
+            marker_30463d9eb9124c018f2a30e8abd75e30.bindPopup(popup_e45ea1e1bd234b3780f86e22b9ab163e)
+            ;
+
+            
+        
+    
+        var marker_b1086723c4e34efe8c5367423acee401 = L.marker(
+            [37.338649749755895, -121.88542175293001],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_abba829e31ba4e69945f1dc0adb7783b = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#e5d8d1',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b1086723c4e34efe8c5367423acee401.setIcon(icon_abba829e31ba4e69945f1dc0adb7783b);
+            
+    
+            var popup_6ccdd97a2dd24296a0871513bf1adfc6 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5f7f7ce539fe4f68888a8c854752cf2d = $(`<div id="html_5f7f7ce539fe4f68888a8c854752cf2d" style="width: 100.0%; height: 100.0%;">Santa Clara Valley Medical Center<br><center>$101,046.40 per year</center></div>`)[0];
+                popup_6ccdd97a2dd24296a0871513bf1adfc6.setContent(html_5f7f7ce539fe4f68888a8c854752cf2d);
+            
+
+            marker_b1086723c4e34efe8c5367423acee401.bindPopup(popup_6ccdd97a2dd24296a0871513bf1adfc6)
+            ;
+
+            
+        
+    
+        var marker_b82e2aed70eb4152b7b664f1840cf1a7 = L.marker(
+            [37.9537315368652, -121.290458679199],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_1aeb2638991046989e62f9d1518162a9 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#dbdcde',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b82e2aed70eb4152b7b664f1840cf1a7.setIcon(icon_1aeb2638991046989e62f9d1518162a9);
+            
+    
+            var popup_bc2fd9439e3c421daec71656547eee20 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_fd618e5cf2f2440b8ecd578d40986eb1 = $(`<div id="html_fd618e5cf2f2440b8ecd578d40986eb1" style="width: 100.0%; height: 100.0%;">Dameron Community Hospital<br><center>$97,843.20 per year</center></div>`)[0];
+                popup_bc2fd9439e3c421daec71656547eee20.setContent(html_fd618e5cf2f2440b8ecd578d40986eb1);
+            
+
+            marker_b82e2aed70eb4152b7b664f1840cf1a7.bindPopup(popup_bc2fd9439e3c421daec71656547eee20)
+            ;
+
+            
+        
+    
+        var marker_3cfec1fc65b049b298d808d76070fd20 = L.marker(
+            [37.9537315368652, -121.290458679199],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_45d77cc139664e37a433b5e908df32a2 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#dbdcde',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3cfec1fc65b049b298d808d76070fd20.setIcon(icon_45d77cc139664e37a433b5e908df32a2);
+            
+    
+            var popup_12ffc8de75084b2ea830ad18c6cbc2be = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_43daa4a71274432d819522b3ac851ae9 = $(`<div id="html_43daa4a71274432d819522b3ac851ae9" style="width: 100.0%; height: 100.0%;">Dignity Health St. Joseph Medical Center<br><center>$97,760.00 per year</center></div>`)[0];
+                popup_12ffc8de75084b2ea830ad18c6cbc2be.setContent(html_43daa4a71274432d819522b3ac851ae9);
+            
+
+            marker_3cfec1fc65b049b298d808d76070fd20.bindPopup(popup_12ffc8de75084b2ea830ad18c6cbc2be)
+            ;
+
+            
+        
+    
+        var marker_d134938aa5804faead15789ac142f03f = L.marker(
+            [37.77711868286129, -122.419639587402],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_a0d6c39671e642508920850d63735fb7 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#d5dbe5',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d134938aa5804faead15789ac142f03f.setIcon(icon_a0d6c39671e642508920850d63735fb7);
+            
+    
+            var popup_2ba0847fc47d4e14a58b8d0d7007faa4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d9c2feac42934e6d81295071c72c32c8 = $(`<div id="html_d9c2feac42934e6d81295071c72c32c8" style="width: 100.0%; height: 100.0%;">Hospice by the Bay<br><center>$95,888.00 per year</center></div>`)[0];
+                popup_2ba0847fc47d4e14a58b8d0d7007faa4.setContent(html_d9c2feac42934e6d81295071c72c32c8);
+            
+
+            marker_d134938aa5804faead15789ac142f03f.bindPopup(popup_2ba0847fc47d4e14a58b8d0d7007faa4)
+            ;
+
+            
+        
+    
+        var marker_9099175542f3430890f632b4562b46f5 = L.marker(
+            [34.0534896850586, -118.245323181152],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_b9ce7f6f535442a5b8fa072daea3176a = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#c7d7f0',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9099175542f3430890f632b4562b46f5.setIcon(icon_b9ce7f6f535442a5b8fa072daea3176a);
+            
+    
+            var popup_73ea1ca53d214b4eaf8d3a3d8e183a87 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_415f773e980241dd8b4ed16b590152df = $(`<div id="html_415f773e980241dd8b4ed16b590152df" style="width: 100.0%; height: 100.0%;">California Hospital Medical Center<br><center>$92,206.40 per year</center></div>`)[0];
+                popup_73ea1ca53d214b4eaf8d3a3d8e183a87.setContent(html_415f773e980241dd8b4ed16b590152df);
+            
+
+            marker_9099175542f3430890f632b4562b46f5.bindPopup(popup_73ea1ca53d214b4eaf8d3a3d8e183a87)
+            ;
+
+            
+        
+    
+        var marker_1f56e2ef0e7540a2a3d430c7e9e86f47 = L.marker(
+            [37.0043792724609, -121.571670532227],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_c99208325a804dd9a682a456453c39f9 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#c5d6f2',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1f56e2ef0e7540a2a3d430c7e9e86f47.setIcon(icon_c99208325a804dd9a682a456453c39f9);
+            
+    
+            var popup_cb31f4f024be4e628322f531c0d3f1cf = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9839e6008fac45d38398a497abb73301 = $(`<div id="html_9839e6008fac45d38398a497abb73301" style="width: 100.0%; height: 100.0%;">Dignity Health<br><center>$91,520.00 per year</center></div>`)[0];
+                popup_cb31f4f024be4e628322f531c0d3f1cf.setContent(html_9839e6008fac45d38398a497abb73301);
+            
+
+            marker_1f56e2ef0e7540a2a3d430c7e9e86f47.bindPopup(popup_cb31f4f024be4e628322f531c0d3f1cf)
+            ;
+
+            
+        
+    
+        var marker_034372d01f38453e924d0b0b8a0d1f80 = L.marker(
+            [32.7156791687012, -117.16171264648399],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_67d0a704c34c4ee380b65eefd0512648 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#c4d5f3',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_034372d01f38453e924d0b0b8a0d1f80.setIcon(icon_67d0a704c34c4ee380b65eefd0512648);
+            
+    
+            var popup_810d236c269c412fbfe6ab2b3a3311b8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6d6de8f8591e42e38d7fb10f509c24c6 = $(`<div id="html_6d6de8f8591e42e38d7fb10f509c24c6" style="width: 100.0%; height: 100.0%;">Scripps Health Hospital<br><center>$91,249.60 per year</center></div>`)[0];
+                popup_810d236c269c412fbfe6ab2b3a3311b8.setContent(html_6d6de8f8591e42e38d7fb10f509c24c6);
+            
+
+            marker_034372d01f38453e924d0b0b8a0d1f80.bindPopup(popup_810d236c269c412fbfe6ab2b3a3311b8)
+            ;
+
+            
+        
+    
+        var marker_dc0ea80291cb4f27aa3e1f9ddcc4b0da = L.marker(
+            [37.641548156738295, -121.003463745117],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_05a684e4675644fea856428de2d77221 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#c3d5f4',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dc0ea80291cb4f27aa3e1f9ddcc4b0da.setIcon(icon_05a684e4675644fea856428de2d77221);
+            
+    
+            var popup_abee8d39b8b8453d86cbf570f839e4b1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2cee90e6a99b4d97a2ca1b9114178230 = $(`<div id="html_2cee90e6a99b4d97a2ca1b9114178230" style="width: 100.0%; height: 100.0%;">Doctors Medical Center <br><center>$91,000.00 per year</center></div>`)[0];
+                popup_abee8d39b8b8453d86cbf570f839e4b1.setContent(html_2cee90e6a99b4d97a2ca1b9114178230);
+            
+
+            marker_dc0ea80291cb4f27aa3e1f9ddcc4b0da.bindPopup(popup_abee8d39b8b8453d86cbf570f839e4b1)
+            ;
+
+            
+        
+    
+        var marker_f4d32b7ec67d47fe9e12f6a8d6acbffb = L.marker(
+            [37.550910949706996, -121.98217010498001],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_b01c6fbdbce74c2687577c03b9e7d153 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#c1d4f4',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f4d32b7ec67d47fe9e12f6a8d6acbffb.setIcon(icon_b01c6fbdbce74c2687577c03b9e7d153);
+            
+    
+            var popup_66cc74ffa03048969617d9d24f55a174 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9f24ade7b7294f81b2340e07dcb6f9ca = $(`<div id="html_9f24ade7b7294f81b2340e07dcb6f9ca" style="width: 100.0%; height: 100.0%;">Fremont Hospital<br><center>$90,480.00 per year</center></div>`)[0];
+                popup_66cc74ffa03048969617d9d24f55a174.setContent(html_9f24ade7b7294f81b2340e07dcb6f9ca);
+            
+
+            marker_f4d32b7ec67d47fe9e12f6a8d6acbffb.bindPopup(popup_66cc74ffa03048969617d9d24f55a174)
+            ;
+
+            
+        
+    
+        var marker_ffef351f08a84e91a0f45d748211215f = L.marker(
+            [34.0534896850586, -118.245323181152],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_cbbe94d97d884f5a873a68e1a88e4dee = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#c1d4f4',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ffef351f08a84e91a0f45d748211215f.setIcon(icon_cbbe94d97d884f5a873a68e1a88e4dee);
+            
+    
+            var popup_99761f64ac514c849fb07674dd6545ae = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0c145de513ae44bba800e2405955f157 = $(`<div id="html_0c145de513ae44bba800e2405955f157" style="width: 100.0%; height: 100.0%;">Kaiser Los Angeles<br><center>$90,480.00 per year</center></div>`)[0];
+                popup_99761f64ac514c849fb07674dd6545ae.setContent(html_0c145de513ae44bba800e2405955f157);
+            
+
+            marker_ffef351f08a84e91a0f45d748211215f.bindPopup(popup_99761f64ac514c849fb07674dd6545ae)
+            ;
+
+            
+        
+    
+        var marker_6978d68e982c4d3d99ab4793d48bb5af = L.marker(
+            [34.0534896850586, -118.245323181152],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_aed9c4b6db2d457f8675dd2bfd517d7d = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#c0d4f5',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6978d68e982c4d3d99ab4793d48bb5af.setIcon(icon_aed9c4b6db2d457f8675dd2bfd517d7d);
+            
+    
+            var popup_4e03d85fb26f4d0c92dffae608557d06 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_973f76c93ace431ebf40ad1b993ea02b = $(`<div id="html_973f76c93ace431ebf40ad1b993ea02b" style="width: 100.0%; height: 100.0%;">USC Keck Medical Center<br><center>$90,438.40 per year</center></div>`)[0];
+                popup_4e03d85fb26f4d0c92dffae608557d06.setContent(html_973f76c93ace431ebf40ad1b993ea02b);
+            
+
+            marker_6978d68e982c4d3d99ab4793d48bb5af.bindPopup(popup_4e03d85fb26f4d0c92dffae608557d06)
+            ;
+
+            
+        
+    
+        var marker_b6cb6d2adc5147b9bc22427ad969c4a1 = L.marker(
+            [34.066501617431605, -118.44522857666],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_6cdc36c91fb94920b4fb80c17335f341 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#bed2f6',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b6cb6d2adc5147b9bc22427ad969c4a1.setIcon(icon_6cdc36c91fb94920b4fb80c17335f341);
+            
+    
+            var popup_8d9a1f4da42c4a9e972f1ca49c6c4f04 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4346a836914d4260afe3018d459f7adc = $(`<div id="html_4346a836914d4260afe3018d459f7adc" style="width: 100.0%; height: 100.0%;">UCLA Ronald Reagan Medical Center<br><center>$89,752.00 per year</center></div>`)[0];
+                popup_8d9a1f4da42c4a9e972f1ca49c6c4f04.setContent(html_4346a836914d4260afe3018d459f7adc);
+            
+
+            marker_b6cb6d2adc5147b9bc22427ad969c4a1.bindPopup(popup_8d9a1f4da42c4a9e972f1ca49c6c4f04)
+            ;
+
+            
+        
+    
+        var marker_38ca73868ac94de7bd7cb59d7b0689b1 = L.marker(
+            [33.823211669921896, -116.511962890625],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_082cdc827a364eeb9e5c2f147b4c1b2a = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#bcd2f7',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_38ca73868ac94de7bd7cb59d7b0689b1.setIcon(icon_082cdc827a364eeb9e5c2f147b4c1b2a);
+            
+    
+            var popup_b8529e12f9e04085957c613a05555ab7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_218323040c4542759de6294f8a0bc3a4 = $(`<div id="html_218323040c4542759de6294f8a0bc3a4" style="width: 100.0%; height: 100.0%;">Desert Regional Medical Center<br><center>$89,440.00 per year</center></div>`)[0];
+                popup_b8529e12f9e04085957c613a05555ab7.setContent(html_218323040c4542759de6294f8a0bc3a4);
+            
+
+            marker_38ca73868ac94de7bd7cb59d7b0689b1.bindPopup(popup_b8529e12f9e04085957c613a05555ab7)
+            ;
+
+            
+        
+    
+        var marker_29183f2c2b0842228cda5403453a5d47 = L.marker(
+            [33.787868499755895, -117.850708007812],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_3a542515768d4ffb823aaf255f853a5a = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#b7cff9',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_29183f2c2b0842228cda5403453a5d47.setIcon(icon_3a542515768d4ffb823aaf255f853a5a);
+            
+    
+            var popup_e0db992640254f04a936b3bc247f000f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_617833d37c2749479596016700c37007 = $(`<div id="html_617833d37c2749479596016700c37007" style="width: 100.0%; height: 100.0%;">UC Irvine Medical Center<br><center>$88,212.80 per year</center></div>`)[0];
+                popup_e0db992640254f04a936b3bc247f000f.setContent(html_617833d37c2749479596016700c37007);
+            
+
+            marker_29183f2c2b0842228cda5403453a5d47.bindPopup(popup_e0db992640254f04a936b3bc247f000f)
+            ;
+
+            
+        
+    
+        var marker_fef7f5af3f24481d97c6ebe8b6883840 = L.marker(
+            [32.766040802002, -117.024360656738],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_51fe38abd9704b7a93b4fd79b31ee6bf = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#b7cff9',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fef7f5af3f24481d97c6ebe8b6883840.setIcon(icon_51fe38abd9704b7a93b4fd79b31ee6bf);
+            
+    
+            var popup_77c4c36caf12456f95049f70e39590b0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7cf39bc48a9d4a6baf82b2b76935fe7e = $(`<div id="html_7cf39bc48a9d4a6baf82b2b76935fe7e" style="width: 100.0%; height: 100.0%;">Sharp Grossmont Hospital<br><center>$87,984.00 per year</center></div>`)[0];
+                popup_77c4c36caf12456f95049f70e39590b0.setContent(html_7cf39bc48a9d4a6baf82b2b76935fe7e);
+            
+
+            marker_fef7f5af3f24481d97c6ebe8b6883840.bindPopup(popup_77c4c36caf12456f95049f70e39590b0)
+            ;
+
+            
+        
+    
+        var marker_a0d7bbd50d224cee99f5e6beabd07110 = L.marker(
+            [34.0970802307129, -118.108238220215],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_ea970d2f320147bbbbdabc3090d08f74 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#b5cdfa',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a0d7bbd50d224cee99f5e6beabd07110.setIcon(icon_ea970d2f320147bbbbdabc3090d08f74);
+            
+    
+            var popup_a6e3d9491a274eb9b4b2971a2e358f60 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e22cf35f49a546b6b06edcee17b156f3 = $(`<div id="html_e22cf35f49a546b6b06edcee17b156f3" style="width: 100.0%; height: 100.0%;">San Gabriel Valley Medical Center<br><center>$87,360.00 per year</center></div>`)[0];
+                popup_a6e3d9491a274eb9b4b2971a2e358f60.setContent(html_e22cf35f49a546b6b06edcee17b156f3);
+            
+
+            marker_a0d7bbd50d224cee99f5e6beabd07110.bindPopup(popup_a6e3d9491a274eb9b4b2971a2e358f60)
+            ;
+
+            
+        
+    
+        var marker_d2b8f42b0f71479081b880ec6a4bcc6a = L.marker(
+            [33.927829742431605, -118.199272155762],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_ce7c97ec745144a0aaaf0a579af93f97 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#b3cdfb',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d2b8f42b0f71479081b880ec6a4bcc6a.setIcon(icon_ce7c97ec745144a0aaaf0a579af93f97);
+            
+    
+            var popup_8ee59d32613c4e8eb62245bd64051ff6 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ad737d3ba1fe46c7998731cbcde5366e = $(`<div id="html_ad737d3ba1fe46c7998731cbcde5366e" style="width: 100.0%; height: 100.0%;">St. Francis Medical Center<br><center>$87,256.00 per year</center></div>`)[0];
+                popup_8ee59d32613c4e8eb62245bd64051ff6.setContent(html_ad737d3ba1fe46c7998731cbcde5366e);
+            
+
+            marker_d2b8f42b0f71479081b880ec6a4bcc6a.bindPopup(popup_8ee59d32613c4e8eb62245bd64051ff6)
+            ;
+
+            
+        
+    
+        var marker_c5e9a0b9c86943e59c19d289e54b9517 = L.marker(
+            [33.9817085266113, -117.374038696289],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_1a2204512bb24814a1eb94d29b415d04 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#b3cdfb',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c5e9a0b9c86943e59c19d289e54b9517.setIcon(icon_1a2204512bb24814a1eb94d29b415d04);
+            
+    
+            var popup_645be1375ae54025a31c75104959c1c8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7a2c1bad7a3145ebbf82dd112497772c = $(`<div id="html_7a2c1bad7a3145ebbf82dd112497772c" style="width: 100.0%; height: 100.0%;">Riverside Community Hospital <br><center>$87,235.20 per year</center></div>`)[0];
+                popup_645be1375ae54025a31c75104959c1c8.setContent(html_7a2c1bad7a3145ebbf82dd112497772c);
+            
+
+            marker_c5e9a0b9c86943e59c19d289e54b9517.bindPopup(popup_645be1375ae54025a31c75104959c1c8)
+            ;
+
+            
+        
+    
+        var marker_8224d761fffc4252832c646cd9076455 = L.marker(
+            [32.7156791687012, -117.16171264648399],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_589ad3e8d9674e649b344531f98d0c54 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#afcafc',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8224d761fffc4252832c646cd9076455.setIcon(icon_589ad3e8d9674e649b344531f98d0c54);
+            
+    
+            var popup_cd625c721bfe427eb45fe6a4f21ee23f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_92359e0317c04743b5cfd0667270bf64 = $(`<div id="html_92359e0317c04743b5cfd0667270bf64" style="width: 100.0%; height: 100.0%;">Rady Children's Hospital<br><center>$86,216.00 per year</center></div>`)[0];
+                popup_cd625c721bfe427eb45fe6a4f21ee23f.setContent(html_92359e0317c04743b5cfd0667270bf64);
+            
+
+            marker_8224d761fffc4252832c646cd9076455.bindPopup(popup_cd625c721bfe427eb45fe6a4f21ee23f)
+            ;
+
+            
+        
+    
+        var marker_7a784c6a92844bcd8ff9712785ce1997 = L.marker(
+            [33.123161315918004, -117.082168579102],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_c6bb16b1ec5b410f8df8c283602bdabf = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#abc8fd',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7a784c6a92844bcd8ff9712785ce1997.setIcon(icon_c6bb16b1ec5b410f8df8c283602bdabf);
+            
+    
+            var popup_9b88340bbbb347a9b8f064f35f50cc75 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_883940197b334048b5071c31f8fc17c3 = $(`<div id="html_883940197b334048b5071c31f8fc17c3" style="width: 100.0%; height: 100.0%;">Palomar Medical Center<br><center>$85,404.80 per year</center></div>`)[0];
+                popup_9b88340bbbb347a9b8f064f35f50cc75.setContent(html_883940197b334048b5071c31f8fc17c3);
+            
+
+            marker_7a784c6a92844bcd8ff9712785ce1997.bindPopup(popup_9b88340bbbb347a9b8f064f35f50cc75)
+            ;
+
+            
+        
+    
+        var marker_6794a93b4c724eb186b8940783c3ff89 = L.marker(
+            [34.075271606445305, -118.38062286376999],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_1bab9067286341e796491a9531fba885 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#abc8fd',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6794a93b4c724eb186b8940783c3ff89.setIcon(icon_1bab9067286341e796491a9531fba885);
+            
+    
+            var popup_2c6d3a2a9ea5445b9e9b09220e761a0d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_11c7b127fd064b7597775e2ccc782851 = $(`<div id="html_11c7b127fd064b7597775e2ccc782851" style="width: 100.0%; height: 100.0%;">Cedars Sinai Medical Center<br><center>$85,280.00 per year</center></div>`)[0];
+                popup_2c6d3a2a9ea5445b9e9b09220e761a0d.setContent(html_11c7b127fd064b7597775e2ccc782851);
+            
+
+            marker_6794a93b4c724eb186b8940783c3ff89.bindPopup(popup_2c6d3a2a9ea5445b9e9b09220e761a0d)
+            ;
+
+            
+        
+    
+        var marker_198c76678bd24228be28dc153c3469f6 = L.marker(
+            [34.4193801879883, -119.69905090331999],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_f56197d6938d40a993e1854533a23a50 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#7597f6',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_198c76678bd24228be28dc153c3469f6.setIcon(icon_f56197d6938d40a993e1854533a23a50);
+            
+    
+            var popup_bf0c9ded5bc2415f8224467a722ca3cb = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5185b6a4ab69444684ddc3caf35924c4 = $(`<div id="html_5185b6a4ab69444684ddc3caf35924c4" style="width: 100.0%; height: 100.0%;">Cottage Health Systems<br><center>$72,800.00 per year</center></div>`)[0];
+                popup_bf0c9ded5bc2415f8224467a722ca3cb.setContent(html_5185b6a4ab69444684ddc3caf35924c4);
+            
+
+            marker_198c76678bd24228be28dc153c3469f6.bindPopup(popup_bf0c9ded5bc2415f8224467a722ca3cb)
+            ;
+
+            
+        
+    
+        var marker_979442b5f3bf4de0a58a789b95ec2940 = L.marker(
+            [37.4952812194824, -120.846717834473],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_ccc678cd9dc8439296bc8fe95d549b6c = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#a2c1ff',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_979442b5f3bf4de0a58a789b95ec2940.setIcon(icon_ccc678cd9dc8439296bc8fe95d549b6c);
+            
+    
+            var popup_619b5220e0fb416bbe66dfaf7525954d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_73b029d025374ba3a928f8d10c82fda6 = $(`<div id="html_73b029d025374ba3a928f8d10c82fda6" style="width: 100.0%; height: 100.0%;">Emanuel Medical Center<br><center>$83,241.60 per year</center></div>`)[0];
+                popup_619b5220e0fb416bbe66dfaf7525954d.setContent(html_73b029d025374ba3a928f8d10c82fda6);
+            
+
+            marker_979442b5f3bf4de0a58a789b95ec2940.bindPopup(popup_619b5220e0fb416bbe66dfaf7525954d)
+            ;
+
+            
+        
+    
+        var marker_3919ea37e0e04258a8649ec205fae5d0 = L.marker(
+            [33.8370513916016, -118.343116760254],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_944d44c3072e481eaa3338cdff9c773d = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#9abbff',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3919ea37e0e04258a8649ec205fae5d0.setIcon(icon_944d44c3072e481eaa3338cdff9c773d);
+            
+    
+            var popup_5dfde9ced5fc494cbe6d576152ff6781 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_430dfb1014ef4445a9c5755c959b13fd = $(`<div id="html_430dfb1014ef4445a9c5755c959b13fd" style="width: 100.0%; height: 100.0%;">Torrance Memorial Medical Center<br><center>$81,120.00 per year</center></div>`)[0];
+                popup_5dfde9ced5fc494cbe6d576152ff6781.setContent(html_430dfb1014ef4445a9c5755c959b13fd);
+            
+
+            marker_3919ea37e0e04258a8649ec205fae5d0.bindPopup(popup_5dfde9ced5fc494cbe6d576152ff6781)
+            ;
+
+            
+        
+    
+        var marker_67fa2cd75d1649b09916ae303854feb0 = L.marker(
+            [33.7667198181152, -118.192398071289],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_b32135d2a6514a4180331129b166e590 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#90b2fe',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_67fa2cd75d1649b09916ae303854feb0.setIcon(icon_b32135d2a6514a4180331129b166e590);
+            
+    
+            var popup_f504301be146406bb799cb4d71c99249 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e95b39504e564b069941b9b90e3245e9 = $(`<div id="html_e95b39504e564b069941b9b90e3245e9" style="width: 100.0%; height: 100.0%;">Long Beach Memorial Miller Children's Hospital<br><center>$79,040.00 per year</center></div>`)[0];
+                popup_f504301be146406bb799cb4d71c99249.setContent(html_e95b39504e564b069941b9b90e3245e9);
+            
+
+            marker_67fa2cd75d1649b09916ae303854feb0.bindPopup(popup_f504301be146406bb799cb4d71c99249)
+            ;
+
+            
+        
+    
+        var marker_5b9d9f4fe08f4fa297d9c661311d7b1a = L.marker(
+            [33.7090682983398, -117.950630187988],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_fa852144141c411f9d32e4984cde949f = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#8fb1fe',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5b9d9f4fe08f4fa297d9c661311d7b1a.setIcon(icon_fa852144141c411f9d32e4984cde949f);
+            
+    
+            var popup_59a25798ec9e4e97b70d4db1281b06c8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_29c71677b36a4a6282550915eac95ae0 = $(`<div id="html_29c71677b36a4a6282550915eac95ae0" style="width: 100.0%; height: 100.0%;">Fountain Valley Regional<br><center>$78,852.80 per year</center></div>`)[0];
+                popup_59a25798ec9e4e97b70d4db1281b06c8.setContent(html_29c71677b36a4a6282550915eac95ae0);
+            
+
+            marker_5b9d9f4fe08f4fa297d9c661311d7b1a.bindPopup(popup_59a25798ec9e4e97b70d4db1281b06c8)
+            ;
+
+            
+        
+    
+        var marker_b6ca4a32c37b4c29a4a3e6e343e353dd = L.marker(
+            [33.8370513916016, -118.343116760254],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_3f51f547b092479a9500be050d392532 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#8db0fe',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b6ca4a32c37b4c29a4a3e6e343e353dd.setIcon(icon_3f51f547b092479a9500be050d392532);
+            
+    
+            var popup_004e9a000f304d7b81c300add41b3c8e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_152d7221156a4d0b96ae48f935be3a7d = $(`<div id="html_152d7221156a4d0b96ae48f935be3a7d" style="width: 100.0%; height: 100.0%;">Providence Little Company of Mary Medical Center<br><center>$78,436.80 per year</center></div>`)[0];
+                popup_004e9a000f304d7b81c300add41b3c8e.setContent(html_152d7221156a4d0b96ae48f935be3a7d);
+            
+
+            marker_b6ca4a32c37b4c29a4a3e6e343e353dd.bindPopup(popup_004e9a000f304d7b81c300add41b3c8e)
+            ;
+
+            
+        
+    
+        var marker_dcf24e7a30e449adb3d7a35e8c161781 = L.marker(
+            [34.0534896850586, -118.245323181152],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_c9f7959df5d94de28357b4269ff4160b = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#8caffe',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dcf24e7a30e449adb3d7a35e8c161781.setIcon(icon_c9f7959df5d94de28357b4269ff4160b);
+            
+    
+            var popup_4367052121334fb2ae5cf880fdefe58e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6d2f2d00032447959928af4b8248b66a = $(`<div id="html_6d2f2d00032447959928af4b8248b66a" style="width: 100.0%; height: 100.0%;">Adventist Health White Memorial<br><center>$78,000.00 per year</center></div>`)[0];
+                popup_4367052121334fb2ae5cf880fdefe58e.setContent(html_6d2f2d00032447959928af4b8248b66a);
+            
+
+            marker_dcf24e7a30e449adb3d7a35e8c161781.bindPopup(popup_4367052121334fb2ae5cf880fdefe58e)
+            ;
+
+            
+        
+    
+        var marker_b683829187394b1f9212b331bb3b29f9 = L.marker(
+            [34.146331787109396, -118.248641967773],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_1a92294a2c944d06bb19e68a1290aa0f = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#7ea1fa',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b683829187394b1f9212b331bb3b29f9.setIcon(icon_1a92294a2c944d06bb19e68a1290aa0f);
+            
+    
+            var popup_8ed2e97b4e394b35a76ed0b4c5f2957a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bfa890955fda42328237dd62bb9a03a3 = $(`<div id="html_bfa890955fda42328237dd62bb9a03a3" style="width: 100.0%; height: 100.0%;">Adventist Health Glendale<br><center>$74,880.00 per year</center></div>`)[0];
+                popup_8ed2e97b4e394b35a76ed0b4c5f2957a.setContent(html_bfa890955fda42328237dd62bb9a03a3);
+            
+
+            marker_b683829187394b1f9212b331bb3b29f9.bindPopup(popup_8ed2e97b4e394b35a76ed0b4c5f2957a)
+            ;
+
+            
+        
+    
+        var marker_7f0ffcda3aba47ddb75b4ede8bd437a8 = L.marker(
+            [33.616950988769496, -117.93032836914101],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_43f7278e51b5472299ff973cc9944465 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#7ea1fa',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7f0ffcda3aba47ddb75b4ede8bd437a8.setIcon(icon_43f7278e51b5472299ff973cc9944465);
+            
+    
+            var popup_64defc9832b64dcfaab2378ad6f14b21 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_dbc3f57013d540bd82988b718e1f0a1c = $(`<div id="html_dbc3f57013d540bd82988b718e1f0a1c" style="width: 100.0%; height: 100.0%;">Hoag Hospital<br><center>$74,880.00 per year</center></div>`)[0];
+                popup_64defc9832b64dcfaab2378ad6f14b21.setContent(html_dbc3f57013d540bd82988b718e1f0a1c);
+            
+
+            marker_7f0ffcda3aba47ddb75b4ede8bd437a8.bindPopup(popup_64defc9832b64dcfaab2378ad6f14b21)
+            ;
+
+            
+        
+    
+        var marker_a994571c8e124b168f8fd20add6acfe2 = L.marker(
+            [37.77711868286129, -122.419639587402],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_9a60ac76504f4f5ea849c09183be94c4 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#7ea1fa',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a994571c8e124b168f8fd20add6acfe2.setIcon(icon_9a60ac76504f4f5ea849c09183be94c4);
+            
+    
+            var popup_ceadcd96bd054c8dbe9813bb9aeca6b5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_311ec4540b57496d9f41a7c15e03ae80 = $(`<div id="html_311ec4540b57496d9f41a7c15e03ae80" style="width: 100.0%; height: 100.0%;">Jewish Home of San Francisco<br><center>$74,880.00 per year</center></div>`)[0];
+                popup_ceadcd96bd054c8dbe9813bb9aeca6b5.setContent(html_311ec4540b57496d9f41a7c15e03ae80);
+            
+
+            marker_a994571c8e124b168f8fd20add6acfe2.bindPopup(popup_ceadcd96bd054c8dbe9813bb9aeca6b5)
+            ;
+
+            
+        
+    
+        var marker_4ef55eb28106448097bfa82ce3de0441 = L.marker(
+            [34.048309326171896, -117.243881225586],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_eb6056317a744edfaa82d00592279052 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#9fbfff',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4ef55eb28106448097bfa82ce3de0441.setIcon(icon_eb6056317a744edfaa82d00592279052);
+            
+    
+            var popup_3672b292e4094950adef692246021ee7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9005b7176fcb451e955d438617b05065 = $(`<div id="html_9005b7176fcb451e955d438617b05065" style="width: 100.0%; height: 100.0%;">Loma Linda University Medical Center<br><center>$82,472.00 per year</center></div>`)[0];
+                popup_3672b292e4094950adef692246021ee7.setContent(html_9005b7176fcb451e955d438617b05065);
+            
+
+            marker_4ef55eb28106448097bfa82ce3de0441.bindPopup(popup_3672b292e4094950adef692246021ee7)
+            ;
+
+            
+        
+    
+        var marker_d1e51c00180247949057bbb19a2b0ecd = L.marker(
+            [34.1346588134766, -118.152931213379],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_a03f916fecc54b52b73c5a678ed0638e = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#779af7',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d1e51c00180247949057bbb19a2b0ecd.setIcon(icon_a03f916fecc54b52b73c5a678ed0638e);
+            
+    
+            var popup_1037988d61144e53928a42faa5bf164c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6a6bb49977e54f4bbc859167be9588b5 = $(`<div id="html_6a6bb49977e54f4bbc859167be9588b5" style="width: 100.0%; height: 100.0%;">Huntington Hospital<br><center>$73,299.20 per year</center></div>`)[0];
+                popup_1037988d61144e53928a42faa5bf164c.setContent(html_6a6bb49977e54f4bbc859167be9588b5);
+            
+
+            marker_d1e51c00180247949057bbb19a2b0ecd.bindPopup(popup_1037988d61144e53928a42faa5bf164c)
+            ;
+
+            
+        
+    
+        var marker_9e26af4443974cb89c99a7dce072b357 = L.marker(
+            [33.5453605651855, -117.781532287598],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_79f6b7d516434aa0ab565abd0483e426 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#7597f6',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9e26af4443974cb89c99a7dce072b357.setIcon(icon_79f6b7d516434aa0ab565abd0483e426);
+            
+    
+            var popup_568bcbd40a2c4ef1976430085a7c6892 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_57e1a6247c134e43934be39426e43905 = $(`<div id="html_57e1a6247c134e43934be39426e43905" style="width: 100.0%; height: 100.0%;">Mission Hospital<br><center>$72,924.80 per year</center></div>`)[0];
+                popup_568bcbd40a2c4ef1976430085a7c6892.setContent(html_57e1a6247c134e43934be39426e43905);
+            
+
+            marker_9e26af4443974cb89c99a7dce072b357.bindPopup(popup_568bcbd40a2c4ef1976430085a7c6892)
+            ;
+
+            
+        
+    
+        var marker_897b5a10b0de494a82989a0ef14e74b6 = L.marker(
+            [33.832859039306605, -117.915237426758],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_31e184327aab414bb3cc92ccf95f6953 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#6b8df0',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_897b5a10b0de494a82989a0ef14e74b6.setIcon(icon_31e184327aab414bb3cc92ccf95f6953);
+            
+    
+            var popup_e208068b3d1b460aa7446f1a479393b7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a540a96bd82e4393814ce2b283f4298b = $(`<div id="html_a540a96bd82e4393814ce2b283f4298b" style="width: 100.0%; height: 100.0%;">Anaheim Regional Medical Center<br><center>$70,720.00 per year</center></div>`)[0];
+                popup_e208068b3d1b460aa7446f1a479393b7.setContent(html_a540a96bd82e4393814ce2b283f4298b);
+            
+
+            marker_897b5a10b0de494a82989a0ef14e74b6.bindPopup(popup_e208068b3d1b460aa7446f1a479393b7)
+            ;
+
+            
+        
+    
+        var marker_d8253f3bb9b14da1a3d4332e606eca91 = L.marker(
+            [34.146331787109396, -118.248641967773],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_cf25b40a738e42cda355b4a0377a1a99 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#6282ea',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d8253f3bb9b14da1a3d4332e606eca91.setIcon(icon_cf25b40a738e42cda355b4a0377a1a99);
+            
+    
+            var popup_86c3a5f182f0449ebba5fe1098e5ac7b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b45320ac526f46a399d58b9fb3e6a5b4 = $(`<div id="html_b45320ac526f46a399d58b9fb3e6a5b4" style="width: 100.0%; height: 100.0%;">Lakewood Regional Medical Center<br><center>$68,432.00 per year</center></div>`)[0];
+                popup_86c3a5f182f0449ebba5fe1098e5ac7b.setContent(html_b45320ac526f46a399d58b9fb3e6a5b4);
+            
+
+            marker_d8253f3bb9b14da1a3d4332e606eca91.bindPopup(popup_86c3a5f182f0449ebba5fe1098e5ac7b)
+            ;
+
+            
+        
+    
+        var marker_0864621fc5ea40db9c6d11e05da3bb28 = L.marker(
+            [35.3672294616699, -119.01885986328101],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_34058e8b279b4479bbca40098dd3dee0 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#5a78e4',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0864621fc5ea40db9c6d11e05da3bb28.setIcon(icon_34058e8b279b4479bbca40098dd3dee0);
+            
+    
+            var popup_3461f69495ff46ecab35ffde5216ddd5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a9833d0c56e04d1ba6527b821807798e = $(`<div id="html_a9833d0c56e04d1ba6527b821807798e" style="width: 100.0%; height: 100.0%;">Adventist Health San Joaquin Community Hospital<br><center>$66,560.00 per year</center></div>`)[0];
+                popup_3461f69495ff46ecab35ffde5216ddd5.setContent(html_a9833d0c56e04d1ba6527b821807798e);
+            
+
+            marker_0864621fc5ea40db9c6d11e05da3bb28.bindPopup(popup_3461f69495ff46ecab35ffde5216ddd5)
+            ;
+
+            
+        
+    
+        var marker_1139b3e163174484b7a43f4f968b251c = L.marker(
+            [34.510608673095696, -117.32363891601601],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_4a02712f188f4b29b6eacc844133f09d = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#5572df',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1139b3e163174484b7a43f4f968b251c.setIcon(icon_4a02712f188f4b29b6eacc844133f09d);
+            
+    
+            var popup_e556e3d51868427a8b0c8f5bfa720b11 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_de441b5b4fe347559467a89065a2a6cc = $(`<div id="html_de441b5b4fe347559467a89065a2a6cc" style="width: 100.0%; height: 100.0%;">Desert Valley Hospital<br><center>$65,312.00 per year</center></div>`)[0];
+                popup_e556e3d51868427a8b0c8f5bfa720b11.setContent(html_de441b5b4fe347559467a89065a2a6cc);
+            
+
+            marker_1139b3e163174484b7a43f4f968b251c.bindPopup(popup_e556e3d51868427a8b0c8f5bfa720b11)
+            ;
+
+            
+        
+    
+        var marker_8dac264210e24d6bacd74d04cc92844d = L.marker(
+            [33.5584297180176, -117.211791992188],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_b9d79716bbfc40a4a9bcfcbba67cc12c = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#5470de',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8dac264210e24d6bacd74d04cc92844d.setIcon(icon_b9d79716bbfc40a4a9bcfcbba67cc12c);
+            
+    
+            var popup_c3c2c038a17e436dbfea116690f586dd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a6f012ce14ea403c8843b8a11632c05a = $(`<div id="html_a6f012ce14ea403c8843b8a11632c05a" style="width: 100.0%; height: 100.0%;">Rancho Springs Medical Center<br><center>$65,000.00 per year</center></div>`)[0];
+                popup_c3c2c038a17e436dbfea116690f586dd.setContent(html_a6f012ce14ea403c8843b8a11632c05a);
+            
+
+            marker_8dac264210e24d6bacd74d04cc92844d.bindPopup(popup_c3c2c038a17e436dbfea116690f586dd)
+            ;
+
+            
+        
+    
+        var marker_204a04d222eb470abd1b649831876e0e = L.marker(
+            [33.5024795532227, -117.16693115234399],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_0cd3bdd8febe42b58fea5675da47e069 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#5470de',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_204a04d222eb470abd1b649831876e0e.setIcon(icon_0cd3bdd8febe42b58fea5675da47e069);
+            
+    
+            var popup_2bc91f9fe91d41b5aec1ac9da9b43188 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_40732d9344654ea09b028fc428cf6cf8 = $(`<div id="html_40732d9344654ea09b028fc428cf6cf8" style="width: 100.0%; height: 100.0%;">Temecula Valley Hospital<br><center>$65,000.00 per year</center></div>`)[0];
+                popup_2bc91f9fe91d41b5aec1ac9da9b43188.setContent(html_40732d9344654ea09b028fc428cf6cf8);
+            
+
+            marker_204a04d222eb470abd1b649831876e0e.bindPopup(popup_2bc91f9fe91d41b5aec1ac9da9b43188)
+            ;
+
+            
+        
+    
+        var marker_ca30658fdb8c47d4be7f85bf3c3b63c0 = L.marker(
+            [33.832859039306605, -117.915237426758],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_f0c4015541ba41ef9c33d7fa17d462e8 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#516ddb',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ca30658fdb8c47d4be7f85bf3c3b63c0.setIcon(icon_f0c4015541ba41ef9c33d7fa17d462e8);
+            
+    
+            var popup_3c940cf8a8b34a1098f72080d53b005f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_24e41d5eed4d4807860f8d539da7bb50 = $(`<div id="html_24e41d5eed4d4807860f8d539da7bb50" style="width: 100.0%; height: 100.0%;">West Anaheim Medical Center<br><center>$64,480.00 per year</center></div>`)[0];
+                popup_3c940cf8a8b34a1098f72080d53b005f.setContent(html_24e41d5eed4d4807860f8d539da7bb50);
+            
+
+            marker_ca30658fdb8c47d4be7f85bf3c3b63c0.bindPopup(popup_3c940cf8a8b34a1098f72080d53b005f)
+            ;
+
+            
+        
+    
+        var marker_538dcdc816374819b37242469c3eddaf = L.marker(
+            [34.0978012084961, -118.289840698242],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_e3ac4bcb5c524657b0380f73cf3ee28f = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#4b64d5',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_538dcdc816374819b37242469c3eddaf.setIcon(icon_e3ac4bcb5c524657b0380f73cf3ee28f);
+            
+    
+            var popup_cb089c7f91a243bdb3d96637321f9b18 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1a63f1cee155414689f87299dbb24403 = $(`<div id="html_1a63f1cee155414689f87299dbb24403" style="width: 100.0%; height: 100.0%;">Children's Hospital Los Angeles<br><center>$62,920.00 per year</center></div>`)[0];
+                popup_cb089c7f91a243bdb3d96637321f9b18.setContent(html_1a63f1cee155414689f87299dbb24403);
+            
+
+            marker_538dcdc816374819b37242469c3eddaf.bindPopup(popup_cb089c7f91a243bdb3d96637321f9b18)
+            ;
+
+            
+        
+    
+        var marker_07f72832741a4f929e09865ecd984d01 = L.marker(
+            [33.787868499755895, -117.850708007812],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_7cc05f34b0224811824970beee3b09b7 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#4a63d3',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_07f72832741a4f929e09865ecd984d01.setIcon(icon_7cc05f34b0224811824970beee3b09b7);
+            
+    
+            var popup_01edcbfa092a4b778714c14618f60366 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_20bf62f66331471699fcc7c167716b10 = $(`<div id="html_20bf62f66331471699fcc7c167716b10" style="width: 100.0%; height: 100.0%;">St. Joseph Hospital of Orange<br><center>$62,504.00 per year</center></div>`)[0];
+                popup_01edcbfa092a4b778714c14618f60366.setContent(html_20bf62f66331471699fcc7c167716b10);
+            
+
+            marker_07f72832741a4f929e09865ecd984d01.bindPopup(popup_01edcbfa092a4b778714c14618f60366)
+            ;
+
+            
+        
+    
+        var marker_5d2d39dce1ba4641a36eb1c3a5c99f5e = L.marker(
+            [33.981399536132805, -118.219139099121],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_588e05cab13e4d1bb10196878ad02598 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#4f69d9',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5d2d39dce1ba4641a36eb1c3a5c99f5e.setIcon(icon_588e05cab13e4d1bb10196878ad02598);
+            
+    
+            var popup_9bccfe7bb2174e109400cf15368bc188 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e180eb54ddf84a6b9159abcc57e8d771 = $(`<div id="html_e180eb54ddf84a6b9159abcc57e8d771" style="width: 100.0%; height: 100.0%;">Community Hospital of Huntington Park<br><center>$63,773.00 per year</center></div>`)[0];
+                popup_9bccfe7bb2174e109400cf15368bc188.setContent(html_e180eb54ddf84a6b9159abcc57e8d771);
+            
+
+            marker_5d2d39dce1ba4641a36eb1c3a5c99f5e.bindPopup(popup_9bccfe7bb2174e109400cf15368bc188)
+            ;
+
+            
+        
+    
+        var marker_55c3363965d540a9a4bd4174fe28aa17 = L.marker(
+            [36.7406616210938, -119.78575897216801],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_65f6060431644d7b9a25e16a478e9c17 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#3e51c5',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_55c3363965d540a9a4bd4174fe28aa17.setIcon(icon_65f6060431644d7b9a25e16a478e9c17);
+            
+    
+            var popup_02e34fd25acc447b8389a15e64a9e303 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_01484204015b4d7ea0920554fc2c83de = $(`<div id="html_01484204015b4d7ea0920554fc2c83de" style="width: 100.0%; height: 100.0%;">Community Regional Medical Center<br><center>$59,280.00 per year</center></div>`)[0];
+                popup_02e34fd25acc447b8389a15e64a9e303.setContent(html_01484204015b4d7ea0920554fc2c83de);
+            
+
+            marker_55c3363965d540a9a4bd4174fe28aa17.bindPopup(popup_02e34fd25acc447b8389a15e64a9e303)
+            ;
+
+            
+        
+    
+        var marker_dcac9bbdbe5c41bd8a9f0bfbbfe07031 = L.marker(
+            [34.048309326171896, -117.243881225586],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_e7614c54d64d49ffa125df2961e233bc = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#3b4cc0',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dcac9bbdbe5c41bd8a9f0bfbbfe07031.setIcon(icon_e7614c54d64d49ffa125df2961e233bc);
+            
+    
+            var popup_e9cf9095e1ff42bba88076db2a1c32c6 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_dc969b41ca234c88a39ef019f57e5c1c = $(`<div id="html_dc969b41ca234c88a39ef019f57e5c1c" style="width: 100.0%; height: 100.0%;">Loma Linda Children's Hospital<br><center>$58,240.00 per year</center></div>`)[0];
+                popup_e9cf9095e1ff42bba88076db2a1c32c6.setContent(html_dc969b41ca234c88a39ef019f57e5c1c);
+            
+
+            marker_dcac9bbdbe5c41bd8a9f0bfbbfe07031.bindPopup(popup_e9cf9095e1ff42bba88076db2a1c32c6)
+            ;
+
+            
+        
+    
+        var marker_6ad27b8410694f988d29d939396cd473 = L.marker(
+            [38.299110412597706, -122.28540802001999],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_941e040eecbc48f1a7dc84c95ac19a3e = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#f0cdbb',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6ad27b8410694f988d29d939396cd473.setIcon(icon_941e040eecbc48f1a7dc84c95ac19a3e);
+            
+    
+            var popup_2543141e850f454f9b3ead9f23ca2f69 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c7bfd4ffae4a46da856cba5a19b151fa = $(`<div id="html_c7bfd4ffae4a46da856cba5a19b151fa" style="width: 100.0%; height: 100.0%;">Queen of the Valley Medical Center<br><center>$105,352.00 per year</center></div>`)[0];
+                popup_2543141e850f454f9b3ead9f23ca2f69.setContent(html_c7bfd4ffae4a46da856cba5a19b151fa);
+            
+
+            marker_6ad27b8410694f988d29d939396cd473.bindPopup(popup_2543141e850f454f9b3ead9f23ca2f69)
+            ;
+
+            
+        
+    
+        var marker_5c9758e4a235495fa97f6cfad0f3448c = L.marker(
+            [33.7495803833008, -117.874458312988],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c21556a28b90469786e3a4f4694f7e19);
+        
+    
+
+                var icon_dc0af555f7314eb8acfb1c70363242fe = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: '#7b9ff9',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5c9758e4a235495fa97f6cfad0f3448c.setIcon(icon_dc0af555f7314eb8acfb1c70363242fe);
+            
+    
+            var popup_c98ccc73d82740ebb334a4448fe691f4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_cb125a46a9d545948e357a162af3911b = $(`<div id="html_cb125a46a9d545948e357a162af3911b" style="width: 100.0%; height: 100.0%;">Orange County Global Medical Center<br><center>$74,484.80 per year</center></div>`)[0];
+                popup_c98ccc73d82740ebb334a4448fe691f4.setContent(html_cb125a46a9d545948e357a162af3911b);
+            
+
+            marker_5c9758e4a235495fa97f6cfad0f3448c.bindPopup(popup_c98ccc73d82740ebb334a4448fe691f4)
+            ;
+
+            
+        
+</script>
